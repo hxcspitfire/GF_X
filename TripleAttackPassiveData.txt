@@ -1,0 +1,24 @@
+# 三重攻击被动技能数据配置
+# 格式: Id,SkillName,SkillDescription,SkillIcon,SkillType,SkillCategory,BaseCooldown,BaseManaCost,BaseDamage,SkillRange,Duration,EffectPrefab,SoundEffect,MaxLevel,UnlockLevel,PrerequisiteSkills,TargetType,CanBeInterrupted,CastTime,AnimationName
+
+# 三重攻击被动技能
+101,三重攻击,攻击敌人3次后触发吸血效果,SkillIcon_TripleAttack,1,0,0.0,0,0,0.0,0.0,Effect_TripleAttackTrigger,Sound_TripleAttackTrigger,10,5,,0,false,0.0,
+
+# 技能等级数据
+# 格式: Id,SkillId,Level,CooldownModifier,ManaCostModifier,DamageModifier,RangeModifier,DurationModifier,UpgradeCost,UpgradeExp,SpecialEffect
+
+10101,101,1,0.0,0,0,0.0,0.0,100,50,攻击3次触发吸血
+10102,101,2,0.0,0,0,0.0,0.0,150,75,攻击3次触发吸血
+10103,101,3,0.0,0,0,0.0,0.0,200,100,攻击3次触发吸血
+10104,101,4,0.0,0,0,0.0,0.0,250,125,攻击3次触发吸血
+10105,101,5,0.0,0,0,0.0,0.0,300,150,攻击3次触发吸血
+10106,101,6,0.0,0,0,0.0,0.0,350,175,攻击3次触发吸血
+10107,101,7,0.0,0,0,0.0,0.0,400,200,攻击3次触发吸血
+10108,101,8,0.0,0,0,0.0,0.0,450,225,攻击3次触发吸血
+10109,101,9,0.0,0,0,0.0,0.0,500,250,攻击3次触发吸血
+10110,101,10,0.0,0,0,0.0,0.0,600,300,攻击3次触发吸血
+
+# 吸血Buff数据
+# 格式: Id,BuffName,BuffDescription,BuffIcon,BuffType,AttributeType,AttributeValue,ModifierType,Duration,CanStack,MaxStacks,CanBeDispelled,CanBeCleansed,TriggerInterval,TriggerEffectId,EffectPrefab,SoundEffect,Priority
+
+3001,吸血效果,攻击时恢复生命值,BuffIcon_Lifesteal,0,12,0.0,0,5.0,true,3,true,true,0.0,0,Effect_Lifesteal,Sound_Lifesteal,15
