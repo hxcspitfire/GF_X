@@ -1,0 +1,24 @@
+# 三重攻击技能数据配置
+# 格式: Id,SkillName,SkillDescription,SkillIcon,SkillType,SkillCategory,BaseCooldown,BaseManaCost,BaseDamage,SkillRange,Duration,EffectPrefab,SoundEffect,MaxLevel,UnlockLevel,PrerequisiteSkills,TargetType,CanBeInterrupted,CastTime,AnimationName
+
+# 三重攻击技能
+101,三重攻击,连续攻击敌人3次，完成后触发吸血效果,SkillIcon_TripleAttack,0,0,8.0,40,35,3.0,0.0,Effect_TripleAttack,Sound_TripleAttack,10,5,,1,true,0.5,TripleAttackCast
+
+# 技能等级数据
+# 格式: Id,SkillId,Level,CooldownModifier,ManaCostModifier,DamageModifier,RangeModifier,DurationModifier,UpgradeCost,UpgradeExp,SpecialEffect
+
+10101,101,1,0.0,0,0,0.0,0.0,100,50,基础三重攻击
+10102,101,2,-0.5,0,5,0.0,0.0,150,75,冷却时间减少0.5秒
+10103,101,3,-0.5,0,5,0.5,0.0,200,100,攻击范围增加0.5
+10104,101,4,-1.0,0,8,0.5,0.0,250,125,伤害大幅提升
+10105,101,5,-1.0,-5,10,1.0,0.0,300,150,魔法消耗减少5点
+10106,101,6,-1.5,-5,12,1.0,0.0,350,175,冷却时间进一步减少
+10107,101,7,-1.5,-10,15,1.5,0.0,400,200,攻击范围大幅增加
+10108,101,8,-2.0,-10,18,1.5,0.0,450,225,伤害和范围全面提升
+10109,101,9,-2.0,-15,20,2.0,0.0,500,250,魔法消耗大幅减少
+10110,101,10,-2.5,-15,25,2.0,0.0,600,300,终极三重攻击
+
+# 吸血Buff数据
+# 格式: Id,BuffName,BuffDescription,BuffIcon,BuffType,AttributeType,AttributeValue,ModifierType,Duration,CanStack,MaxStacks,CanBeDispelled,CanBeCleansed,TriggerInterval,TriggerEffectId,EffectPrefab,SoundEffect,Priority
+
+3001,吸血效果,攻击时恢复生命值,BuffIcon_Lifesteal,0,12,0.0,0,5.0,true,3,true,true,0.0,0,Effect_Lifesteal,Sound_Lifesteal,15
